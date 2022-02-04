@@ -78,7 +78,7 @@ while True:
         books = loadBooks()
         print('Total de libros cargados: ' + str(lt.size(books)))
 
-        print("Primer libro cargado: "´str(lt.firstElement(books)))
+        print("Primer libro cargado: "+str(lt.firstElement(books)))
 
 
 
