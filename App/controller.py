@@ -20,6 +20,7 @@
  * along withthis program.  If not, see <http://www.gnu.org/licenses/>.
  """
 
+from fileinput import filename
 import config as cf
 import model
 import csv
@@ -53,6 +54,6 @@ def loadTags(filename):
 
 
 def loadBooksTags(catalog):
-    booktagsfile= cf.data_dir + filaname
-    return model.addBookTags(booktagsfile)
+    btfile = cf.data_dir + filename
+    return model.addBookTags(btfile)
 
